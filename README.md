@@ -80,35 +80,38 @@ Create a Dockerfile
   touch Dockerfile
    ```
    
+   Create a docker.ignore file
   ```
   touch dockerignore
    ```
+   
+   Create a .net core project
    ```
   dotnet new webapi -o TodoApi
    ```
    
+   Write something here
    ```
    code -r ../TodoApi
    ```
    
+   On windows run this to trust certs
    ```
    dotnet dev-certs https --trust
    ```
-   
-   Adding packages
+   Adding packages - Here are some examples:
    ```
    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
    dotnet add package Microsoft.EntityFrameworkCore.Design
    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
    dotnet add package MySqlConnector
    dotnet add package Pomelo.EntityFrameworkCore.MySql
-   
    ```
    
    Using .Net Tools
    ```
-   dotnet tool install -g dotnet-aspnet-codegenerator
    export PATH=$HOME/.dotnet/tools:$PATH
+   dotnet tool install -g dotnet-aspnet-codegenerator
    dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
    ```
    
