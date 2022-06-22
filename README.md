@@ -69,4 +69,31 @@ _Below is an example of how you can instruct your audience on installing and set
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Developer Notes -->
+## Developer Notes
+
+Steps used to create this project.
+
+Create a Dockerfile
+
+  ```
+  touch Dockerfile
+   ```
+   
+  ```
+  touch dockerignore
+   ```
+   ```
+  dotnet new webapi -o TodoApi
+   ```
+   
+   ```
+   code -r ../TodoApi
+   ```
+   
+   ```
+   dotnet dev-certs https --trust
+   ```
+   
+   
 
