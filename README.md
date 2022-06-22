@@ -121,5 +121,16 @@ Create a Dockerfile
 
    ```
    
+   ADD GIT ignore
+   ```
+   dotnet new gitignore
+   
+   ```
+   
+   Fix GIT ignore files
+   ```
+   git rm --cached `git ls-files -i -c --exclude-from=.gitignore`
+   
+   ```
    
 
