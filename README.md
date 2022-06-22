@@ -100,6 +100,8 @@ Create a Dockerfile
    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
    dotnet add package Microsoft.EntityFrameworkCore.Design
    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+   dotnet add package MySqlConnector
+   dotnet add package Pomelo.EntityFrameworkCore.MySql
    
    ```
    
@@ -110,6 +112,14 @@ Create a Dockerfile
    dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
    ```
    
+   Creating first migration
+   ```
+   dotnet tool install --global dotnet-ef
+   dotnet tool update --global dotnet-ef
+   dotnet ef migrations add InitialCreate
+   dotnet ef database update
+
+   ```
    
    
 
