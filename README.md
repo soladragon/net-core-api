@@ -60,10 +60,12 @@ _Below is an example of how you can instruct your audience on installing and set
    git clone https://github.com/your_username_/Project-Name.git
    ```
 2. Use docker to build your image
-* Docker
-  ```docker build -t aspnetapp .
+
+  ```
+  docker build -t aspnetapp .
   docker run -it -p 5000:80 --name aspnetcore aspnetapp
    ```
+   
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
