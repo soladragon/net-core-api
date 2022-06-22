@@ -48,7 +48,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 
@@ -64,7 +63,6 @@ _Below is an example of how you can instruct your audience on installing and set
 * Docker
   ```docker build -t aspnetapp .
   docker run -it -p 5000:80 --name aspnetcore aspnetapp
-
    ```
    
 <p align="right">(<a href="#top">back to top</a>)</p>
