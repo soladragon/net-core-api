@@ -108,9 +108,13 @@ Create a Dockerfile
    dotnet add package Pomelo.EntityFrameworkCore.MySql
    ```
    
-   Using .Net Tools
+   Linux - Set the path of tools do it works.
    ```
    export PATH=$HOME/.dotnet/tools:$PATH
+   ```
+   
+   Using Generating controller/context/model
+   ```
    dotnet tool install -g dotnet-aspnet-codegenerator
    dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
    ```
@@ -121,19 +125,16 @@ Create a Dockerfile
    dotnet tool update --global dotnet-ef
    dotnet ef migrations add InitialCreate
    dotnet ef database update
-
    ```
    
    ADD GIT ignore
    ```
    dotnet new gitignore
-   
    ```
    
    Fix GIT ignore files
    ```
    git rm --cached `git ls-files -i -c --exclude-from=.gitignore`
-   
    ```
    
 
