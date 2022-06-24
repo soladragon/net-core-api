@@ -119,9 +119,16 @@ Create a Dockerfile
    dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
    ```
    
+   Dotnet Tool installs
+   ```
+   dotnet tool install -g dotnet-aspnet-codegenerator
+   dotnet tool install --global dotnet-ef
+   
+   ```
+   
    Creating first migration
    ```
-   dotnet tool install --global dotnet-ef
+   
    dotnet tool update --global dotnet-ef
    dotnet ef migrations add InitialCreate
    dotnet ef database update
