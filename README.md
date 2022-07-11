@@ -128,10 +128,19 @@ Create a Dockerfile
    
    Creating first migration
    ```
-   
    dotnet tool update --global dotnet-ef
    dotnet ef migrations add InitialCreate
    dotnet ef database update
+   ```
+   
+   Rollback all migrations
+   ```
+   dotnet ef database update 0
+   ```
+   
+   Rollback ato certain migration
+   ```
+   dotnet ef database update <name of migration here>
    ```
    
    ADD GIT ignore
