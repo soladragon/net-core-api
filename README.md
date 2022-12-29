@@ -90,6 +90,13 @@ Create a Dockerfile
   dotnet new webapi -o TodoApi
    ```
    
+   add git ignore file for .net core 6
+   ```
+     dotnet new gitignore
+   ```
+   
+
+   
    Write something here
    ```
    code -r ../TodoApi
